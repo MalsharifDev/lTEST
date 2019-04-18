@@ -76,7 +76,8 @@ class NetworkManager {
         if let encoded_ = request.url().addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed) {
             urlString = encoded_
         }
-        manager?.request(urlString, method: postType, encoding: JSONEncoding.default, headers: request.authorizationHeader())
+        
+        manager?.request(urlString, method: postType, parameters: request.parameters(), encoding: JSONEncoding.default, headers: request.authorizationHeader())
             
             .responseString { (response) in
                 print("responseString = \(response)")

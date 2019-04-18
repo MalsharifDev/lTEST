@@ -10,8 +10,6 @@ import Foundation
 
 enum ResponseType : Int {
     case Success
-    case Created
-    case UnAuthorized
     case Failure
 }
 
@@ -32,10 +30,6 @@ class Response {
         if let s = httpStatusCode {
             if (s == 200) {
                 self.status = .Success
-            } else if(s == 201) {
-                self.status = .Created
-            } else if (s == 401){
-                self.status = .UnAuthorized
             } else {
                 self.status = .Failure
             }

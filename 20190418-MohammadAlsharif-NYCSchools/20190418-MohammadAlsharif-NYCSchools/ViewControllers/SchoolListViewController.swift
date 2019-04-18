@@ -26,7 +26,7 @@ class SchoolListViewController: BaseViewController {
             ActivityManager.hideActivityIndicator(controller: self)
             if response != nil
             {
-                if (response!.success!.count) > 0 {
+                if (response!.schoolList.count) > 0 {
                     
                 }
                 else if response!.error! {

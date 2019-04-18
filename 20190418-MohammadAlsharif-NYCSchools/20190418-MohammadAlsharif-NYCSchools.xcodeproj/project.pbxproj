@@ -25,6 +25,10 @@
 		461EE760226908D200D39479 /* ParserBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461EE75F226908D200D39479 /* ParserBase.swift */; };
 		461EE762226908D900D39479 /* SchoolListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461EE761226908D900D39479 /* SchoolListParser.swift */; };
 		461EE76422690B3600D39479 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461EE76322690B3600D39479 /* Response.swift */; };
+		461EE767226922F100D39479 /* SATScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461EE766226922F100D39479 /* SATScoresViewController.swift */; };
+		461EE769226923DB00D39479 /* SATScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461EE768226923DB00D39479 /* SATScoreService.swift */; };
+		461EE76B2269247400D39479 /* SATScoreRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461EE76A2269247400D39479 /* SATScoreRequest.swift */; };
+		461EE76D226925F900D39479 /* SATScoreParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461EE76C226925F900D39479 /* SATScoreParser.swift */; };
 		8284FCEA0AC17A4D8F578D94 /* Pods_20190418_MohammadAlsharif_NYCSchools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700C152677416F1750EA216D /* Pods_20190418_MohammadAlsharif_NYCSchools.framework */; };
 		8AAC4DA6761BA99961802FC9 /* Pods_20190418_MohammadAlsharif_NYCSchoolsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C68A83B69D76C06631AE8EC /* Pods_20190418_MohammadAlsharif_NYCSchoolsTests.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +77,10 @@
 		461EE75F226908D200D39479 /* ParserBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserBase.swift; sourceTree = "<group>"; };
 		461EE761226908D900D39479 /* SchoolListParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolListParser.swift; sourceTree = "<group>"; };
 		461EE76322690B3600D39479 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		461EE766226922F100D39479 /* SATScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoresViewController.swift; sourceTree = "<group>"; };
+		461EE768226923DB00D39479 /* SATScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoreService.swift; sourceTree = "<group>"; };
+		461EE76A2269247400D39479 /* SATScoreRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoreRequest.swift; sourceTree = "<group>"; };
+		461EE76C226925F900D39479 /* SATScoreParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoreParser.swift; sourceTree = "<group>"; };
 		4EBA0836976DAFD370A4CB68 /* Pods-20190418-MohammadAlsharif-NYCSchools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190418-MohammadAlsharif-NYCSchools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-20190418-MohammadAlsharif-NYCSchools/Pods-20190418-MohammadAlsharif-NYCSchools.debug.xcconfig"; sourceTree = "<group>"; };
 		700C152677416F1750EA216D /* Pods_20190418_MohammadAlsharif_NYCSchools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20190418_MohammadAlsharif_NYCSchools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E4A06456C84677C3A54054 /* Pods-20190418-MohammadAlsharif-NYCSchools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190418-MohammadAlsharif-NYCSchools.release.xcconfig"; path = "Pods/Target Support Files/Pods-20190418-MohammadAlsharif-NYCSchools/Pods-20190418-MohammadAlsharif-NYCSchools.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,10 +142,10 @@
 		461EE71C2268F8C300D39479 /* 20190418-MohammadAlsharif-NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
+				461EE7652269211100D39479 /* ViewControllers */,
 				461EE74E2269043D00D39479 /* Base */,
 				461EE74B226903F100D39479 /* Managers */,
 				461EE7512269059700D39479 /* Network */,
-				461EE71F2268F8C300D39479 /* SchoolListViewController.swift */,
 				461EE71D2268F8C300D39479 /* AppDelegate.swift */,
 				461EE7212268F8C300D39479 /* Main.storyboard */,
 				461EE7242268F8C400D39479 /* Assets.xcassets */,
@@ -198,6 +206,7 @@
 			children = (
 				461EE7552269071000D39479 /* ServiceBase.swift */,
 				461EE753226906D700D39479 /* SchoolListService.swift */,
+				461EE768226923DB00D39479 /* SATScoreService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -207,6 +216,7 @@
 			children = (
 				461EE75A2269082B00D39479 /* RequestBase.swift */,
 				461EE75C2269085800D39479 /* SchoolListRequest.swift */,
+				461EE76A2269247400D39479 /* SATScoreRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -216,8 +226,18 @@
 			children = (
 				461EE75F226908D200D39479 /* ParserBase.swift */,
 				461EE761226908D900D39479 /* SchoolListParser.swift */,
+				461EE76C226925F900D39479 /* SATScoreParser.swift */,
 			);
 			path = Parsers;
+			sourceTree = "<group>";
+		};
+		461EE7652269211100D39479 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				461EE71F2268F8C300D39479 /* SchoolListViewController.swift */,
+				461EE766226922F100D39479 /* SATScoresViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		6CD62E354C49EBEBCB5CAB4B /* Frameworks */ = {
@@ -457,18 +477,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461EE76D226925F900D39479 /* SATScoreParser.swift in Sources */,
 				461EE75D2269085800D39479 /* SchoolListRequest.swift in Sources */,
 				461EE75B2269082B00D39479 /* RequestBase.swift in Sources */,
 				461EE762226908D900D39479 /* SchoolListParser.swift in Sources */,
 				461EE7202268F8C300D39479 /* SchoolListViewController.swift in Sources */,
 				461EE76422690B3600D39479 /* Response.swift in Sources */,
 				461EE7502269044D00D39479 /* BaseViewController.swift in Sources */,
+				461EE767226922F100D39479 /* SATScoresViewController.swift in Sources */,
 				461EE7562269071100D39479 /* ServiceBase.swift in Sources */,
 				461EE7582269073100D39479 /* NetworkManager.swift in Sources */,
 				461EE71E2268F8C300D39479 /* AppDelegate.swift in Sources */,
 				461EE760226908D200D39479 /* ParserBase.swift in Sources */,
 				461EE754226906D700D39479 /* SchoolListService.swift in Sources */,
 				461EE74D2269040A00D39479 /* ActivityManager.swift in Sources */,
+				461EE769226923DB00D39479 /* SATScoreService.swift in Sources */,
+				461EE76B2269247400D39479 /* SATScoreRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

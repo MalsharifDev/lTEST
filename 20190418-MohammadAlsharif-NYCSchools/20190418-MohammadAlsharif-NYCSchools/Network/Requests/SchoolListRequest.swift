@@ -25,22 +25,11 @@ class SchoolListRequest: RequestBase {
         return "/s3k6-pzi2.json?$limit=\(limit)&$offset=\(offset)"
     }
     
-    override func isAuthRequired() -> Bool {
-        return false
-    }
     
     override func requestType() -> RequestType {
         return .GET
     }
-    
-    override func parameters() -> [String : AnyObject] {
-        var parameters: [String:String] = [String:String]()
-        
-        parameters.updateValue(offset, forKey: "$offset")
-        parameters.updateValue(limit, forKey: "$limit")
 
-        return parameters as [String : AnyObject]
-    }
     
     override func parser() -> ParserBase {
         return SchoolListParser()

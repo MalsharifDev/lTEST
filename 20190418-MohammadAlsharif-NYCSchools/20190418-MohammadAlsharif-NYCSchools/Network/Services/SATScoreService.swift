@@ -1,33 +1,33 @@
 //
-//  SchoolListService.swift
+//  SATScoreService.swift
 //  20190418-MohammadAlsharif-NYCSchools
 //
-//  Created by Mohammad on 18/04/19.
+//  Created by Abhishek on 18/04/19.
 //  Copyright © 2019 MohammadAlsharif. All rights reserved.
 //
 
 import UIKit
 
-class SchoolListService: ServiceBase {
+class SATScoreService: ServiceBase {
     
-    func fetchSchools(offset:String, limit:String, completionHandler: @escaping ((_ response : SchoolResponse?) -> (Void))) {
+    func fetchScore(school_id:String, completionHandler: @escaping ((_ response : SATScoreResponse?) -> (Void))) {
         
-        let request = SchoolListRequest(offset:offset, limit:limit)
+        let request = SATScoreRequest(schoolId: school_id)
         networkManager.executeRequest(request: request, completionHandler: { (response, httpStatusCode) -> Void in
             
             if (response.status == .Success) {
                 
-                if response.data is SchoolResponse? {
+                if response.data is SATScoreResponse? {
                     self.networkManager.initializeManager()
-                    completionHandler(response.data as? SchoolResponse)
+                    completionHandler(response.data as? SATScoreResponse)
                 }
                 else {
                     completionHandler(nil) // Unknown error, should not happen
                 }
-            }  else {
+            } else {
                 
-                if (response.data as? SchoolResponse) != nil {
-                    completionHandler(response.data as? SchoolResponse) // Error in response from server
+                if (response.data as? SATScoreResponse) != nil {
+                    completionHandler(response.data as? SATScoreResponse) // Error in response from server
                 } else {
                     completionHandler(nil) // Unknown error, should not happen
                 }

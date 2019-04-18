@@ -34,7 +34,7 @@ class RequestBase {
     ///
     /// - Returns: url
     func url() -> String {
-//        print("Complete URL \(hostUrl() + endPoint())")
+        //        print("Complete URL \(hostUrl() + endPoint())")
         
         return hostUrl() + endPoint()
     }
