@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import Reachability
 
-
+// This is a Base class for all the API calls
 class NetworkManager {
     
     static let sharedInstance: NetworkManager = NetworkManager()
@@ -30,6 +30,7 @@ class NetworkManager {
         manager = Alamofire.SessionManager(configuration: configuration)
     }
     
+    // This method will check the status of InternetConnection
     func startReachability() {
         
         reachability.whenReachable = { reachability in
@@ -60,6 +61,7 @@ class NetworkManager {
         }
     }
     
+    // This function will call the API, fetch the response and send the response back to the ResponseHandler class
     func executeRequest(request : RequestBase, completionHandler:@escaping (_ apiResponse:Response, _ httpStatusCode: Int?)->Void) {
         
         if !reachable {

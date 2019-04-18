@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+// This class will parse the FetchSchoolList API response
 class SchoolListParser: ParserBase {
     
     override func parseData(data:  Any) -> AnyObject? {
@@ -25,6 +25,7 @@ class SchoolListParser: ParserBase {
             school.school_name = schoolData["school_name"] as? String
             school.school_id = schoolData["dbn"] as? String
             school.school_address = schoolData["primary_address_line_1"] as? String
+            school.school_website = schoolData["website"] as? String
             response.schoolList.append(school)
         }
         
@@ -46,6 +47,7 @@ struct SchoolResponse {
 
 struct SchoolDetails {
     var school_address: String?
+    var school_website: String?
     var school_id: String?
     var school_name: String?
     public init () {

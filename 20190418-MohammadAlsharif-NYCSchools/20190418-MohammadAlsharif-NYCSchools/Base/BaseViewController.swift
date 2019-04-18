@@ -22,7 +22,10 @@ class BaseViewController: UIViewController {
     }
     
 
-    // Show alert 
+    /*
+     Show alert with teh title and the text
+     This Alert can be used from all the ChildViewControllers
+     */
     func presentAlertController(_ title: String, message: String) {
         
         let alert: UIAlertController = UIAlertController(title: title, message: message, preferredStyle: .alert)

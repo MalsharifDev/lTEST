@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+// This an a Base class to parse the API response 
 class ParserBase {
     
     func parseData(data :  Any) -> AnyObject? {

@@ -10,7 +10,7 @@ import UIKit
 import MBProgressHUD
 
 class ActivityManager: NSObject {
-
+// Show the loader view while controller is waiting for some results
     class func showActivityIndicator(controller:  UIViewController? , withMessage: String?) {
         if controller != nil {
             let hud = MBProgressHUD.showAdded(to: controller!.view, animated: true)
@@ -20,7 +20,8 @@ class ActivityManager: NSObject {
             }
         }
     }
-    
+
+// Hide the loader view once controller got the results
     class func hideActivityIndicator(controller : UIViewController?) {
         
         if controller != nil {
