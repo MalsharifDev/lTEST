@@ -18,6 +18,9 @@ class SATScoresViewController: BaseViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.navigationItem.title = "SAT Scores"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        
         // Call API to get the SAT Score
         callGetSATScoreWebService()
     }
