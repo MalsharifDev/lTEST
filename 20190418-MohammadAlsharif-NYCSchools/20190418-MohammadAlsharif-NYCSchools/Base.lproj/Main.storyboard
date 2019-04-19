@@ -113,7 +113,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg. Math Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qpg-Vr-vNC" userLabel="Avg Math Score Label">
-                                                    <rect key="frame" x="23" y="87" width="123" height="20"/>
+                                                    <rect key="frame" x="23" y="88.5" width="123" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="27l-wl-IoU"/>
                                                         <constraint firstAttribute="width" constant="123" id="Qvz-Fg-MdZ"/>
@@ -123,7 +123,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg. Reading Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OKo-Ht-wOj" userLabel="Avg Reading Score Label">
-                                                    <rect key="frame" x="23" y="115" width="153" height="21"/>
+                                                    <rect key="frame" x="23" y="116.5" width="153" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="69m-BB-2vc"/>
                                                         <constraint firstAttribute="width" constant="153" id="zNl-yx-xek"/>
@@ -133,7 +133,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg. Writing Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mQN-V5-cvG" userLabel="Avg Writing Score Label">
-                                                    <rect key="frame" x="23" y="144" width="146" height="22"/>
+                                                    <rect key="frame" x="23" y="145.5" width="146" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="146" id="3gU-Hr-Oxe"/>
                                                     </constraints>
@@ -142,19 +142,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wi-Yq-MnG">
-                                                    <rect key="frame" x="180" y="115" width="172" height="21"/>
+                                                    <rect key="frame" x="180" y="116.5" width="172" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpa-Yb-3xk">
-                                                    <rect key="frame" x="23" y="19" width="59" height="28"/>
+                                                    <rect key="frame" x="23" y="19" width="329" height="29.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of test takers:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2tO-gz-4A6" userLabel="Avg Math Score Label">
-                                                    <rect key="frame" x="23" y="59" width="163" height="20"/>
+                                                    <rect key="frame" x="23" y="60.5" width="163" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="163" id="Jxr-PO-G0L"/>
                                                         <constraint firstAttribute="height" constant="20" id="xFv-sY-0v8"/>
@@ -164,19 +164,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEg-eM-6TJ">
-                                                    <rect key="frame" x="190" y="58" width="162" height="21"/>
+                                                    <rect key="frame" x="190" y="59.5" width="162" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9c-oe-yFf">
-                                                    <rect key="frame" x="150" y="86" width="202" height="21"/>
+                                                    <rect key="frame" x="150" y="87.5" width="202" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ge-cL-gIr">
-                                                    <rect key="frame" x="173" y="144" width="179" height="22"/>
+                                                    <rect key="frame" x="173" y="145.5" width="179" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -188,11 +188,12 @@
                                                 <constraint firstItem="3ge-cL-gIr" firstAttribute="trailing" secondItem="0Wi-Yq-MnG" secondAttribute="trailing" id="6Hv-Y9-9Ct"/>
                                                 <constraint firstItem="OKo-Ht-wOj" firstAttribute="top" secondItem="qpg-Vr-vNC" secondAttribute="bottom" constant="8" id="6Je-HJ-js2"/>
                                                 <constraint firstItem="mQN-V5-cvG" firstAttribute="leading" secondItem="OKo-Ht-wOj" secondAttribute="leading" id="9OK-un-BNf"/>
-                                                <constraint firstItem="SEg-eM-6TJ" firstAttribute="top" secondItem="15e-Ii-ZSI" secondAttribute="topMargin" constant="47" id="9iP-uQ-6GY"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="mQN-V5-cvG" secondAttribute="bottom" constant="8" id="B2T-1f-p0g"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Cpa-Yb-3xk" secondAttribute="trailing" constant="8" id="EU3-Xm-hiA"/>
                                                 <constraint firstItem="qpg-Vr-vNC" firstAttribute="leading" secondItem="2tO-gz-4A6" secondAttribute="leading" id="EnW-gS-hiR"/>
                                                 <constraint firstItem="0Wi-Yq-MnG" firstAttribute="firstBaseline" secondItem="OKo-Ht-wOj" secondAttribute="firstBaseline" id="I2Y-FC-H0c"/>
                                                 <constraint firstItem="SEg-eM-6TJ" firstAttribute="leading" secondItem="2tO-gz-4A6" secondAttribute="trailing" constant="4" id="IpS-Ua-zcC"/>
+                                                <constraint firstItem="Cpa-Yb-3xk" firstAttribute="top" secondItem="15e-Ii-ZSI" secondAttribute="topMargin" constant="8" id="LIx-Yu-OyC"/>
                                                 <constraint firstItem="0Wi-Yq-MnG" firstAttribute="trailing" secondItem="s9c-oe-yFf" secondAttribute="trailing" id="LVy-vM-uFV"/>
                                                 <constraint firstItem="mQN-V5-cvG" firstAttribute="top" secondItem="OKo-Ht-wOj" secondAttribute="bottom" constant="8" id="LfY-Gb-sVw"/>
                                                 <constraint firstItem="s9c-oe-yFf" firstAttribute="trailing" secondItem="SEg-eM-6TJ" secondAttribute="trailing" id="W9G-b0-6OW"/>
@@ -244,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcr-HI-QEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1188" y="69"/>
+            <point key="canvasLocation" x="1188" y="68.815592203898049"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9tp-I0-sS7">
